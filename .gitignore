@@ -1,0 +1,33 @@
+# Environment
+.env
+venv/
+
+# Python files
+__pycache__/
+dist/
+**/*.egg-info
+
+# Unit tests
+.pytest_cache
+.coverage
+.coverage.*
+
+# Repo specific
+__TODO.txt
+# *.pdf
+.DS_Store
+
+# IDE files
+/.idea/
+/.idea/
+.idea/*
+/.idea/*
+/**/.idea/*".idea/*"
+".idea/*"
+".idea/*"
+
+# other
+# *.jpg
+# *.png
+
+bff_data/
