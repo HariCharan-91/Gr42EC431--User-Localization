@@ -7,6 +7,11 @@
 - **Kandukuri Maniveer** - 202151070  
 - **Measala Namrath** - 202151089  
 
+### Presentation Video
+
+[Video Link](https://drive.google.com/drive/u/0/folders/1gKJ7a2lxHaNTPhHyVn9qiJaZE6ppFWmr)
+
+
 # User Localization in 5G Networks Using Machine Learning
 
 Welcome to the User Localization in 5G Networks project! This repository explores the use of machine learning techniques to enable precise user localization in 5G networks using Beamformed Fingerprints (BFFs). The project addresses the challenges of signal attenuation, multipath propagation, and non-line-of-sight (NLOS) conditions in millimeter-wave (mmWave) communications.
@@ -29,12 +34,13 @@ This visualization showcases the distribution of maximum received power across a
 ### 2. Error Cumulative Histogram
 The cumulative histogram illustrates the error distribution of the localization model, highlighting the 95th percentile and median errors.
 
-![Cumulative Histogram](./results/hist.pdf)
+[View Cumulative Histogram](./results/hist.pdf)
 
 ### 3. Example Beamformed Fingerprint
 Below is a graphical representation of a beamformed fingerprint, highlighting spatial signal characteristics.
 
-![Beamformed Fingerprint](./results/bff_samples.pdf)
+[View Beamformed Fingerprint](./results/bff_samples.pdf)
+
 
 ## ⚙️ Key Features
 
@@ -52,20 +58,21 @@ To set up and run the project locally, follow these instructions.
 ### Prerequisites
 
 - **Hardware**
-  - Nvidia GPU with Compute Capability 3.5 or higher.
-  - At least 16GB of RAM (32GB recommended).
+  - Nvidia GPU 
+  - At least 16GB of RAM
 
 - **Software**
-  - Python 3.8 or higher.
-  - TensorFlow 2.4+.
-  - CUDA 11.0.
+  - Python 3.7 or higher.
+  - TensorFlow 2.11.1
+  - follow requirements.txt
 
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/<your-repo-url>.git
+   git clone https://github.com/HariCharan-91/Gr42EC431--User-Localization.git
+   pip install -e mmWave-localization-learning/
    cd user-localization-5g
    ```
 
@@ -110,21 +117,6 @@ The project involves the following phases:
 - **Multi-Access Edge Computing (MEC):** Explore edge computing to reduce latency further.
 - **Enhanced Scalability:** Scale the system for larger urban deployments.
 
-## 🌐 Project Structure
-
-- **BaseStation.py:** Manages base station operations and beamforming.
-- **Client.py:** Defines client behavior.
-- **Coverage.py:** Simulates signal coverage and multipath effects.
-- **Slice.py:** Implements network slice management.
-- **Stats.py:** Collects and analyzes performance metrics.
-
-## 🌍 Network Slicing
-
-This project simulates different 5G network slices:
-
-1. **eMBB:** Enhanced Mobile Broadband for high-speed applications.
-2. **mMTC:** Massive IoT communications with high device density.
-3. **URLLC:** Ultra-reliable low-latency applications.
 
 ## 🔖 Contributions
 
